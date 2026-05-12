@@ -3,6 +3,7 @@ from src.config.config import DATA_RAW_PATH
 
 
 def preprocess_run():
+    # Loads sales.csv, parses dates, removes null rows
     # Load raw sales data
     df = pd.read_csv(DATA_RAW_PATH)
 
